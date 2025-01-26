@@ -1,7 +1,9 @@
 package com.slimavicius.DemoApp;
 
-public class Laptop {
-    private int laptop_id;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Laptop implements Computer{
 
     public void compile(){
         System.out.println("Compiling with 404 bugs");
